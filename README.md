@@ -166,7 +166,32 @@ app.get('/authors/:id/books', async (req, res) => {
 }
 ---css
 
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>Salut</p>
+       <div id="obiect">
+           
+       </div>
+       
+        <script>
+            const res = fetch('invoice.json')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("obiect").innerHTML=`<div>${data.invoiceSeries}</div>`
+            });
 
+
+
+            
+        </script>
+    </body>
+</html>
+---html
 
 
 
